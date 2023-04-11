@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/luccaMenu/static/css/main.d81d9551.css",
+    "main.js": "/luccaMenu/static/js/main.0599894e.js",
+    "index.html": "/luccaMenu/index.html",
+    "main.d81d9551.css.map": "/luccaMenu/static/css/main.d81d9551.css.map",
+    "main.0599894e.js.map": "/luccaMenu/static/js/main.0599894e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d81d9551.css",
+    "static/js/main.0599894e.js"
+  ]
+}
