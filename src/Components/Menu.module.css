@@ -1,0 +1,257 @@
+.menuContainer {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    
+  }
+
+ 
+  
+  
+  .menuList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .menuItemImg {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menuItemImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menuItemInfo {
+    flex: 1;
+  }
+  
+  .menuItemName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .menuItemDesc {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+  }
+  
+  .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category:not(:first-child) {
+    margin-top: 2rem;
+  }
+  
+  
+  
+  
+  .categoryTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+ 
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow: auto;
+    border: 2px solid #1E90FF;
+  }
+  
+  .modalImg {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .modalImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .modalImgCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+ 
+
+  .btnClose {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btnClose:hover {
+    transform: scale(1.1);
+  }
+  
+  /* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .modal-content {
+      width: 100%;
+      max-height: 100%;
+      padding: 0.5rem;
+    }
+  
+    .modalImg {
+      height: 150px;
+    }
+  
+    .btnClose {
+      top: 0.25rem;
+      right: 0.25rem;
+      font-size: 0.8rem;
+      padding: 0.3rem;
+    }
+  }
+  
+  /* For screens larger than 768px */
+  @media (min-width: 768px) {
+    .modal-content {
+      width: 70%;
+      max-height: 80%;
+    }
+  
+    .modalImg {
+      height: 250px;
+    }
+  
+    .btnClose {
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+
+  
+  
+  /* Common styles for all screen sizes */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow: auto;
+    border: 2px solid #1E90FF;
+  }
+  
+  .modalImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .modalImgCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  

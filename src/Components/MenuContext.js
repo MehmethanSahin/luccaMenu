@@ -1,0 +1,305 @@
+import { createContext } from "react";
+
+export const MenuListContext = createContext();
+
+export const MenuProvider = (props) => {
+  return (
+    <MenuListContext.Provider
+      value={[
+        {
+          id: 1,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/106027/wood-fired-pizzas-best-seller-4-pack.1653bb05922ba153ac178f8365d27f6d.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Pizzeria Bianco",
+          dsc: "Wood Fired Pizzas Best Seller - 4 Pack",
+          price: 129,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 2,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134704/gramercy-tavern-mushroom-lasagna-4-pack.88c671dec184d8bee908d6f5d8d860f9.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Gramercy Tavern",
+          dsc: "Gramercy Tavern Mushroom Lasagna for 4",
+          price: 99,
+          rate: 4,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 3,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133343/brown-butter-lobster-roll-kit-4-pack.f97b1254243c8628ad1a5cd41227f5d7.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Eventide Oyster Co.",
+          dsc: "Brown Butter Lobster Roll Kit - 4 Pack",
+          price: 99,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 4,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/104768/commanders-palace-three-course-shrimp-and-grits-dinner-for-2.984253533e589547e834420efccc174a.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Commander's Palace",
+          dsc: "Commander's Palace Three-Course Shrimp & Grits Dinner for 2",
+          price: 169,
+          rate: 4,
+          genre: "Ana Yemekler",
+        },
+
+       
+        {
+          id: 5,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/113695/traditional-negiri-sushi-and-cutroll-kit-for-2.381bee7a4e1be32ad5818d93524b0bef.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Blue Ribbon Sushi",
+          dsc: "Blue Ribbon Sushi - DIY Kit for 2",
+          price: 129,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 6,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/114544/zahav-lamb-shoulder-meal-kit-for-4-6.58cfa4d3d5eca52ac45b2d37a9d0f2d4.png?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Zahav",
+          dsc: "Zahav Lamb Shoulder Meal Kit",
+          price: 249,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 7,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131364/the-classic-plateau-dinner-for-2.9906825037a76931415a8fb5e8a2dcbd.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Blue Ribbon",
+          dsc: "The Classic Plateau Seafood Dinner for 2",
+          price: 139,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 8,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/112776/mac-and-cheese-chicken-pot-pie-combo-for-4.c77be8dcb4fabfa1870a2ff4a6bd4c6a.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Wolfgang Puck Catering",
+          dsc: "Mac and Cheese + Chicken Pot Pie Combo for 4",
+          price: 129,
+          rate: 4,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 9,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/104674/prime-galbi-steak-feast-for-4.51c78b5ba768078b166fe91325e60edc.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Cote Korean Steakhouse",
+          dsc: "Prime Galbi Steak Feast for 4",
+          price: 249,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+
+        {
+          id: 10,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132439/yuzu-shio-ramen-kit-for-3.eff2c00445f04ccad761867bf8083ab6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "AFURI",
+          dsc: "Yuzu Shio Ramen Kit for 3",
+          price: 89,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 11,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/126766/unconventional-texas-bbq-sampler-for-4-6.ee40a926a0863ceeb13b1eafb987c7d1.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "Underbelly by Chris Shepherd",
+          dsc: "Unconventional Texas BBQ Sampler for 4-6",
+          price: 119,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        {
+          id: 12,
+          img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132439/yuzu-shio-ramen-kit-for-3.eff2c00445f04ccad761867bf8083ab6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
+          name: "AFURI",
+          dsc: "Yuzu Shio Ramen Kit for 3",
+          price: 89,
+          rate: 5,
+          genre: "Ana Yemekler",
+        },
+        
+        {
+          id: 13,
+          img: "https://images.pexels.com/photos/3749174/pexels-photo-3749174.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Filtre Kahve",
+          dsc: "Farklı tatlar arayanlar için özel hazırlanmış filtre kahve",
+          rate: 5,
+          price: 10,
+          genre: "İçecekler",
+        },
+        {
+          id: 14,
+          img: "https://images.unsplash.com/photo-1595434091143-b375ced5fe5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVzcHJlc3NvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+          name: "Espresso",
+          dsc: "Yoğun aroması ve güçlü tadı ile bir fincan espresso",
+          rate: 5,
+          price: 6,
+          genre: "İçecekler",
+        },
+        {
+          id: 15,
+          img: "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGF0dGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          name: "Latte",
+          dsc: "Süt ve espresso'nun mükemmel uyumu",
+          rate: 5,
+          price: 12,
+          genre: "İçecekler",
+        },
+       
+        {
+          id: 16,
+          img: "https://images.pexels.com/photos/3361170/pexels-photo-3361170.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Mocha",
+          dsc: "Espresso ve çikolata sosunun harika karışımı",
+          rate: 5,
+          price: 13,
+          genre: "İçecekler",
+        },
+        {
+          id: 17,
+          img: "https://images.unsplash.com/photo-1545408074-076d7582081e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhaSUyMGxhdHRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+          name: "Chai Latte",
+          dsc: "Sıcak baharatlı chai çayı ile hazırlanmış süt köpüğü",
+          rate: 4,
+          price: 12,
+          genre: "İçecekler",
+        },
+        {
+          id: 18,
+          img: "https://images.pexels.com/photos/10776450/pexels-photo-10776450.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Yeşil Çay",
+          dsc: "Doğal antioksidanlarla dolu yeşil çay",
+          rate: 3,
+          price: 9,
+          genre: "İçecekler",
+        },
+        {
+          id: 19,
+          img: "https://images.unsplash.com/photo-1599390720183-fdacb8216b90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGljZWQlMjB0ZWF8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          name: "Iced Tea",
+          dsc: "Taze nane ve buzlu siyah çay",
+          rate: 4,
+          price: 10,
+          genre: "İçecekler",
+        },
+
+        {
+          id: 20,
+          img: "https://images.unsplash.com/photo-1567608286687-394db5f7520a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGlyYW1pc3V8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          name: "Tiramisu",
+          dsc: "Kahve ve çikolata aromalı kek tabanı, Tatlı peynirli krema ve kakao ile yapılan bir İtalyan Tatlısı",
+          rate: 5,
+          price: 15,
+          genre: "Tatlılar",
+        },
+        {
+          id: 21,
+          img: "https://images.pexels.com/photos/4051665/pexels-photo-4051665.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Cheesecake",
+          dsc: "Krem peynirli, kumlu bisküvi veya kek tabanı ve çeşitli tatlarla yapılan bir Amerikan pastası",
+          rate: 4,
+          price: 18,
+          genre: "Tatlılar",
+        },
+        {
+          id: 22,
+          img: "https://images.unsplash.com/photo-1482930172332-2293d7138235?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2FkYXklQzQlQjFmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+          name: "Kadayıf",
+          dsc: "İnce tel kadayıf hamurundan yapılan, içi ceviz veya fıstıkla doldurulmuş bir Tatlılar",
+          rate: 3,
+          price: 12,
+          genre: "Tatlılar",
+        },
+        {
+          id: 23,
+          img: "https://media.istockphoto.com/id/157169685/tr/foto%C4%9Fraf/homemade-muffins-with-ham-and-cheese.jpg?s=612x612&w=0&k=20&c=gcORWd7fE63ggC-JL8uyhg934ANeIKkNnbr3dy_o1eU=",
+          name: "Sufle",
+          dsc: "Kek benzeri bir yapıya sahip olan, içi akışkan çikolata veya meyve dolgulu bir Tatlıdır",
+          rate: 5,
+          price: 16,
+          genre: "Tatlılar",
+        },
+        {
+          id: 24,
+          img: "https://images.pexels.com/photos/8774282/pexels-photo-8774282.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Profiterol",
+          dsc: "Küçük çörekler, çırpılmış krema ve çikolata sosu ile servis edilen Fransız bir Tatlılarsı",
+          rate: 4,
+          price: 14,
+          genre: "Tatlılar",
+        },
+        {
+          id: 25,
+          img: "https://images.pexels.com/photos/8774282/pexels-photo-8774282.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Profiterol",
+          dsc: "Küçük çörekler, çırpılmış krema ve çikolata sosu ile servis edilen Fransız bir Tatlılarsı",
+          rate: 4,
+          price: 14,
+          genre: "Tatlılar",
+        },
+        {
+          id: 26,
+          img: "https://media.istockphoto.com/id/1080282270/tr/foto%C4%9Fraf/%C3%A7ilek-re%C3%A7eli-ve-dilim-tan%C4%B1mlama-bilgileri-ile-yo%C4%9Furt.jpg?s=612x612&w=0&k=20&c=OgHElark1SKxGYcr3FmXsNALC1KNAuh_IzP6y8dXkGM=",
+          name: "Magnolia Cupcake",
+          dsc: "Vanilya veya çikolatalı kek üstüne tereyağı kreması ile süslenen bir çeşit cupcakes",
+          rate: 5,
+          price: 5,
+          genre: "Tatlılar",
+        },
+        {
+          id: 27,
+          img: "https://images.pexels.com/photos/1332267/pexels-photo-1332267.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name: "Dondurma",
+          dsc: "Çeşitli aroma seçenekleriyle",
+          rate: 5,
+          price: 5,
+          genre: "Tatlılar",
+        },
+        {
+          "id": 28,
+          "img": "https://cookieandkate.com/images/2017/08/best-quinoa-salad-recipe-3.jpg",
+          "name": "Somonlu Kinoa Salatası",
+          "dsc": "Somon, kinoa, brokoli, avokado ve fındıktan oluşan sağlıklı bir salata.",
+          "price": 12.50,
+          "genre": "Salatalar"
+        },
+        {
+          "id": 29,
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXHm__3vNlJvbLmyihHJf-DstWXZ69I0huw&usqp=CAU",
+          "name": "Mevsim Yeşillikleri Salatası",
+          "dsc": "Taze marul, ıspanak, roka, taze soğan, cherry domates ve havuç ile hazırlanan ferah bir salata.",
+          "price": 8.75,
+          "genre": "Salatalar"
+        },
+        {
+          "id": 30,
+          "img": "https://imagesvc.meredithcorp.io/v3/jumpstartpure/image/?url=https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fstatic%2F1033249144001%2F61e2c669-8c8b-42df-95e9-a964a65e196a%2F07f93669-6228-4e13-af94-1ea64adc0595%2F1280x720%2Fmatch%2Fimage.jpg&w=640&h=360&q=90&c=cc",
+          "name": "Tavuklu Noodle Salatası",
+          "dsc": "Tavuk, noodle, havuç, lahana, soğan ve fındıktan oluşan lezzetli bir salata.",
+          "price": 11.25,
+          "genre": "Salatalar"
+        },
+        {
+          "id": 31,
+          "img": "https://images.pexels.com/photos/434258/pexels-photo-434258.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Mango Salsa ve Avokado Salatası",
+          "dsc": "Mango, avokado, salatalık ve soğandan oluşan egzotik bir salata.",
+          "price": 9.50,
+          "genre": "Salatalar"
+        },
+        {
+          "id": 32,
+          "img": "https://media.istockphoto.com/id/1205208007/tr/foto%C4%9Fraf/k%C4%B1rm%C4%B1z%C4%B1-lahana-salatas%C4%B1-bir-kasede-coleslaw-gri-arka-plan-%C3%BCst-te.jpg?b=1&s=612x612&w=0&k=20&c=wsp9bMrrWaeA4GOX2X8gUci2kt2OdQS1DalRKv4F7vw=",
+          "name": "Badem ve Kırmızı Lahana Salatası",
+          "dsc": "Kırmızı lahana, badem, yeşil soğan ve maydanoz ile hazırlanan sağlıklı bir salata.",
+          "price": 7.95,
+          "genre": "Salatalar"
+        }
+      ]}
+    >
+      {props.children}
+    </MenuListContext.Provider>
+  );
+};
+
+export default MenuListContext;
